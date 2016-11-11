@@ -1,6 +1,6 @@
 # YUM install various package, might require EPEL repo prior to install
 ---
-- hosts: "{{ hosts }}"
+- hosts: all
   #Privilege escalation
   become: true
   become_method: sudo
