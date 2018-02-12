@@ -1,0 +1,8 @@
+---
+- name: Check Kernel Version!
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Validating Kernel Version
+    shell: uname -n -r -v 
