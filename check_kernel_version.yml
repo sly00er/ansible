@@ -1,8 +1,9 @@
 ---
-- name: Check Kernel Version!
+- name: Check Linux Kernel Version with uname under Ansible Tower
   hosts: all
  
   tasks:
  
-  - name: Validating Kernel Version
+  - name: Validating Linux Kernel Version
     shell: uname -n -r -v 
+...
