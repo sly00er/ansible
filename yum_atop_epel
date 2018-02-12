@@ -1,0 +1,12 @@
+# YUM install atop package, might require EPEL repo prior to install
+---
+- hosts: all
+  #Privilege escalation
+  become: true
+  become_method: sudo
+  become_user: root
+
+  tasks:
+    - name: YUM install various EPEL packages
+      yum: name=atop  state=present disable_gpg_check=yes update_cache=yes
+...
